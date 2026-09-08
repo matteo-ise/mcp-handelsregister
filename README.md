@@ -7,6 +7,12 @@
 </div>
 
 
+> [!NOTE]
+> **Proof of Concept & Infrastructure Blueprint**  
+> Dieses Repository ist Teil einer konzeptionellen Infrastruktur für Agentic Commerce. Es dient als **Proof of Concept (PoC)** und Framework-Vorlage. Der Code ist experimentell und soll Entwicklern als Ausgangspunkt dienen, um eigene M2M- und Agenten-Systeme weiterzuentwickeln. Es handelt sich noch nicht um ein finales, produktionsreifes Release.
+
+
+
 > Das Handelsregister ist das Fundament der deutschen Wirtschaft. Dieser MCP-Server macht es für KI-Agenten zugänglich.
 
 10 Millionen Unternehmen. 16 Landesregister. Null APIs. Bis jetzt.
@@ -73,12 +79,6 @@ Weitere Details zur Rechtslage: [Legal Constraints](docs/legal-constraints.md).
 
 Während kommerzielle Anbieter wie North Data oder Apify REST-APIs für menschliche Entwickler bereitstellen, ist `mcp-handelsregister` nativ als MCP (Model Context Protocol) Server für direkte KI-Agenten-Integration konzipiert.
 
-
-## 🚀 Quantum Leap Architecture: Temporal Knowledge Graph
-
-Schreibzugriffe auf das Register sind gesetzlich limitiert (§12 HGB). Wir machen den Lesezugriff dafür übermächtig:
-- **GraphRAG:** XJustiz-XML-Dumps werden live in eine eingebettete Graphdatenbank (Neo4j/Kuzu) transformiert.
-- **UBO Tracing:** Agenten senden Cypher-Queries, um Ultimate Beneficial Owners rekursiv über dutzende Holding-Schichten aufzudecken.
 
 
 ---
