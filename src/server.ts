@@ -23,7 +23,7 @@ const mockCompanies: CompanyProfile[] = [
     }
 ];
 
-class HandelsregisterMCPServer {
+export class HandelsregisterMCPServer {
     private parser: XMLParser;
 
     constructor() {
