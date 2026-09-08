@@ -1,0 +1,20 @@
+{
+  "name": "mcp-handelsregister",
+  "version": "1.0.0",
+  "description": "MCP server for the German Commercial Register (Handelsregister). Provides structured access to company data for AI agents.",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.3.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.3"
+  }
+}
