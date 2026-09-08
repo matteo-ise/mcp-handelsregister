@@ -73,6 +73,14 @@ Weitere Details zur Rechtslage: [Legal Constraints](docs/legal-constraints.md).
 
 Während kommerzielle Anbieter wie North Data oder Apify REST-APIs für menschliche Entwickler bereitstellen, ist `mcp-handelsregister` nativ als MCP (Model Context Protocol) Server für direkte KI-Agenten-Integration konzipiert.
 
+
+## 🚀 Quantum Leap Architecture: Temporal Knowledge Graph
+
+Schreibzugriffe auf das Register sind gesetzlich limitiert (§12 HGB). Wir machen den Lesezugriff dafür übermächtig:
+- **GraphRAG:** XJustiz-XML-Dumps werden live in eine eingebettete Graphdatenbank (Neo4j/Kuzu) transformiert.
+- **UBO Tracing:** Agenten senden Cypher-Queries, um Ultimate Beneficial Owners rekursiv über dutzende Holding-Schichten aufzudecken.
+
+
 ---
 
 **Teil des Agentic Commerce Stack von Matteo Ise:**
